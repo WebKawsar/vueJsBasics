@@ -8,9 +8,18 @@ new Vue({
       lifeTime: "How days you want"
     },
     cars: ["Toyota", "BMW", "Marcidies"],
-    greeting: () => {
-      return "Hello World"
-    }
 
   },
+  methods: {
+    // greeting: function() {
+    //   return "Hello World";
+    // }
+
+
+    greeting: () => {
+      return "Hello ES6"
+    }
+  }
+
+
 });
