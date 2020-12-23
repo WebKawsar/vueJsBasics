@@ -1,32 +1,10 @@
 new Vue({
   el: "#app",
   data: {
-    name: "Kawsar",
-    isItTrue: true,
-    robot: {
-      price: 114,
-      lifeTime: "How days you want"
-    },
-    cars: ["Toyota", "BMW", "Marcidies"],
-
-  },
-  methods: {
-    // greeting: function() {
-    //   return "Hello World";
-    // }
-
-
-    // greeting(){
-    //   return "Hello ES6"
-    // }
-
-
-    greeting(){
-      return this.name;
-    }
-
-
+    src: "https://d30fl32nd2baj9.cloudfront.net/media/2020/01/02/technology-smart-device-010120-01.jpg/BINARY/technology-smart-device-010120-01.jpg",
+    link: "https://web.facebook.com/?_rdc=1&_rdr"
   }
+ 
 
 
 });
