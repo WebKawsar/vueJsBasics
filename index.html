@@ -14,11 +14,13 @@
 
     <div id="app">
 
-        <p>{{myText}}</p>
-        <p v-text="myText"></p>
 
-        <p><strong>Hello Boss 1</strong></p>
-        <p v-html="code"></p>
+        <p v-if="userAge > stdAge">User age {{userAge}}</p>
+        <p v-else>Permission nai</p>
+
+        <hr>
+
+        <p v-if="changeUser()">{{changeUser()}} Boss</p>
 
     </div>
 

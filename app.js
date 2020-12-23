@@ -2,10 +2,16 @@ new Vue({
   el: "#app",
   data: {
 
-    myText: "Hello Luffy",
-    code: "<strong>Hello Boss</strong>",
+    stdAge: 18,
+    userAge: 19,
+    name: "Imran"
 
+  },
+  methods: {
 
+    changeUser(){
+      return this.name === "Kawsar" ? "Kawsar" : "Shamim"
+    }
 
   }
  
