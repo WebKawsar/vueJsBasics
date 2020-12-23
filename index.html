@@ -20,7 +20,8 @@
 
         <hr>
 
-        <p v-if="changeUser()">{{changeUser()}} Boss</p>
+        <p v-show="name === 'Kawsar'">Kawsar Boss</p>
+        <p v-show="name !='Kawsar'">Other Boss</p>
 
     </div>
 
@@ -28,7 +29,8 @@
 
 
 
-    <script src="app.js"></script>
+    <script src=" app.js">
+    </script>
 </body>
 
 </html>
