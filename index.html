@@ -14,9 +14,11 @@
 
     <div id="app">
 
-        <img v-bind:src="src" alt="">
+        <p>{{myText}}</p>
+        <p v-text="myText"></p>
 
-        <a v-bind:href="link">Click me</a>
+        <p><strong>Hello Boss 1</strong></p>
+        <p v-html="code"></p>
 
     </div>
 
