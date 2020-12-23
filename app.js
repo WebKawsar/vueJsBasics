@@ -16,9 +16,16 @@ new Vue({
     // }
 
 
-    greeting: () => {
-      return "Hello ES6"
+    // greeting(){
+    //   return "Hello ES6"
+    // }
+
+
+    greeting(){
+      return this.name;
     }
+
+
   }
 
 
