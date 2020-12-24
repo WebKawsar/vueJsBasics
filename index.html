@@ -19,22 +19,17 @@
 <body>
 
 
-    <div id="app">
+    <div id="app1">
 
+        <p>This is First instance {{value}}</p>
+        <button @click="changeInstance">Change Second instance</button>
+    </div>
+    <br>
+    <hr>
 
-        <p>A = {{a}}</p>
-        <p>B = {{b}}</p>
-        <br>
+    <div id="app2">
 
-        <p>Salary + A = {{addToA}}</p>
-        <p>Salary + B = {{addToB}}</p>
-        <hr>
-
-        <button @click="a++">Add to A</button>
-        <button @click="b++">Add to B</button>
-
-        <hr>
-        <br>
+        <p>This is Second instance {{value}}</p>
 
     </div>
 
