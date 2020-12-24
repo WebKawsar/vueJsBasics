@@ -20,14 +20,25 @@
 
 
     <div id="app">
-        <h2>{{name}}</h2>
+
+        <!-- <h2>{{name}}</h2>
         <button v-on:click="updateName">Click me</button>
         <hr>
         <br>
 
         <div v-on:mousemove="getCord" class="box">Hover on box</div>
         <div>X: {{x}}</div>
-        <div>Y: {{y}}</div>
+        <div>Y: {{y}}</div> -->
+
+        <p>{{name}}</p>
+        <button v-on:click.right="updateName('Imran', $event)">Click me</button>
+        <hr>
+        <br>
+
+        <form v-on:submit.prevent="handleForm">
+            <input type="text" placeholder="Your name">
+            <input type="submit" value="Submit">
+        </form>
 
     </div>
 

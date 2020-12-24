@@ -2,20 +2,28 @@ new Vue({
   el: "#app",
   data: {
     name: "Kawsar",
-    x: 0,
-    y: 0
+    // x: 0,
+    // y: 0
 
   },
   methods: {
-    updateName(){
-        this.name = "Shamim"
+    // updateName(){
+    //     this.name = "Shamim"
+    // },
+    // getCord(event) {
+    //   this.x = event.clientX;
+    //   this.y = event.clientY;
+    // }
+
+    updateName(name, event) {
+      this.name = name;
+      console.log(event);
     },
-    getCord(event) {
-      this.x = event.clientX;
-      this.y = event.clientY;
+    handleForm(e) {
+      
+      
+      console.log('Submit form');
     }
   }
  
-
-
 });
