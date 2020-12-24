@@ -14,24 +14,10 @@
 
     <div id="app">
 
+        <h1>{{name}}</h1>
+        <h1 v-once>{{name}}</h1>
 
-        <p v-if="userAge > stdAge">User age {{userAge}}</p>
-        <p v-else>Permission nai</p>
-
-        <hr>
-
-        <p v-show="name === 'Kawsar'">Kawsar Boss</p>
-        <p v-show="name !='Kawsar'">Other Boss</p>
-
-        <hr>
-
-        <ul>
-            <li v-for="(car, index) in cars"> {{index}} => {{car}}</li>
-        </ul>
-
-        <ul>
-            <li v-for="n in 10">{{n}}</li>
-        </ul>
+        {{update()}}
 
     </div>
 
@@ -39,8 +25,7 @@
 
 
 
-    <script src=" app.js">
-    </script>
+    <script src=" app.js"></script>
 </body>
 
 </html>

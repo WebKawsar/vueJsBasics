@@ -1,12 +1,17 @@
 new Vue({
   el: "#app",
   data: {
+    name: "Kawsar"
 
-    stdAge: 18,
-    userAge: 19,
-    name: "Shamim",
-    cars: ["BMW", "Toyota", "Marcedes"]
+  },
+  methods: {
+    update(){
+      setTimeout(() => {
 
+        this.name = "Shamim"
+        
+      }, 3000)
+    }
   }
  
 
