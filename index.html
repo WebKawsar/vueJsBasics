@@ -20,26 +20,18 @@
 
 
     <div id="app">
+        <form v-on:submit.prevent="handleSubmit">
 
-        <!-- <h2>{{name}}</h2>
-        <button v-on:click="updateName">Click me</button>
-        <hr>
-        <br>
+            <label for="firstName">First name : </label>
+            <input v-model="formData.firstName" type="text" name="firstName" id="firstName">
+            <br>
 
-        <div v-on:mousemove="getCord" class="box">Hover on box</div>
-        <div>X: {{x}}</div>
-        <div>Y: {{y}}</div> -->
+            <label for="lastName">Last name : </label>
+            <input v-model="formData.lastName" type="text" name="lastName" id="lastName">
+            <br>
 
-        <p>{{name}}</p>
-        <button v-on:click.right="updateName('Imran', $event)">Click me</button>
-        <hr>
-        <br>
-
-        <form v-on:submit.prevent="handleForm">
-            <input type="text" placeholder="Your name">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submnit">
         </form>
-
     </div>
 
 

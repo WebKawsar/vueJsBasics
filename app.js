@@ -1,29 +1,21 @@
 new Vue({
   el: "#app",
   data: {
-    name: "Kawsar",
-    // x: 0,
-    // y: 0
+
+    formData: {
+      firstName: "",
+      lastName: ""
+    }
 
   },
   methods: {
-    // updateName(){
-    //     this.name = "Shamim"
-    // },
-    // getCord(event) {
-    //   this.x = event.clientX;
-    //   this.y = event.clientY;
-    // }
 
-    updateName(name, event) {
-      this.name = name;
-      console.log(event);
-    },
-    handleForm(e) {
+    handleSubmit() {
       
-      
-      console.log('Submit form');
+      console.log(this.formData);
+
     }
+
   }
  
 });
