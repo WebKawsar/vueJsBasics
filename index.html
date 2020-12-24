@@ -20,18 +20,22 @@
 
 
     <div id="app">
-        <form v-on:submit.prevent="handleSubmit">
 
-            <label for="firstName">First name : </label>
-            <input v-model="formData.firstName" type="text" name="firstName" id="firstName">
-            <br>
 
-            <label for="lastName">Last name : </label>
-            <input v-model="formData.lastName" type="text" name="lastName" id="lastName">
-            <br>
+        <p>A = {{a}}</p>
+        <p>B = {{b}}</p>
+        <br>
 
-            <input type="submit" value="Submnit">
-        </form>
+        <p>Salary + A = {{addToA}}</p>
+        <p>Salary + B = {{addToB}}</p>
+        <hr>
+
+        <button v-on:click="a++">Add to A</button>
+        <button v-on:click="b++">Add to B</button>
+
+        <hr>
+        <br>
+
     </div>
 
 

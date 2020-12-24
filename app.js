@@ -2,18 +2,20 @@ new Vue({
   el: "#app",
   data: {
 
-    formData: {
-      firstName: "",
-      lastName: ""
-    }
+    a: 0,
+    b: 0,
+    salary: 10
 
   },
-  methods: {
+  computed: {
 
-    handleSubmit() {
-      
-      console.log(this.formData);
-
+    addToA() {
+      console.log("Add A");
+      return this.a + this.salary;
+    },
+    addToB() {
+      console.log("Add B");
+      return this.b + this.salary;
     }
 
   }
