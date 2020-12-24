@@ -1,13 +1,13 @@
-const temp = `<p>My name is {{name}}</p>`
-
-const app1 = new Vue({
-
-  data: {
-    name: "Kawsar"
+Vue.component("Kawsar", {
+  data(){
+    return {
+      name: "Boossss"
+    }
   },
-  template: temp
+  template: `<p>{{name}}</p>`
 })
 
-setTimeout(() => {
-  app1.$mount("#app1")
-}, 2000)
+
+new Vue({
+  el: "#app"
+})
