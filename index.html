@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Js Vasics</title>
     <script src="vue.js"></script>
-
+    <style>
+        .box {
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
 
     <div id="app">
+        <h2>{{name}}</h2>
+        <button v-on:click="updateName">Click me</button>
+        <hr>
+        <br>
 
-        <h1>{{name}}</h1>
-        <h1 v-once>{{name}}</h1>
-
-        {{update()}}
+        <div v-on:mousemove="getCord" class="box">Hover on box</div>
+        <div>X: {{x}}</div>
+        <div>Y: {{y}}</div>
 
     </div>
 

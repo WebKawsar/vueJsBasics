@@ -1,16 +1,18 @@
 new Vue({
   el: "#app",
   data: {
-    name: "Kawsar"
+    name: "Kawsar",
+    x: 0,
+    y: 0
 
   },
   methods: {
-    update(){
-      setTimeout(() => {
-
+    updateName(){
         this.name = "Shamim"
-        
-      }, 3000)
+    },
+    getCord(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
     }
   }
  
