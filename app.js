@@ -4,7 +4,8 @@ new Vue({
 
     stdAge: 18,
     userAge: 19,
-    name: "Shamim"
+    name: "Shamim",
+    cars: ["BMW", "Toyota", "Marcedes"]
 
   }
  

@@ -23,6 +23,16 @@
         <p v-show="name === 'Kawsar'">Kawsar Boss</p>
         <p v-show="name !='Kawsar'">Other Boss</p>
 
+        <hr>
+
+        <ul>
+            <li v-for="(car, index) in cars"> {{index}} => {{car}}</li>
+        </ul>
+
+        <ul>
+            <li v-for="n in 10">{{n}}</li>
+        </ul>
+
     </div>
 
 
