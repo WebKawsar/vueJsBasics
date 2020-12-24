@@ -1,25 +1,13 @@
-const app11 = new Vue({
-  el: "#app1",
+const temp = `<p>My name is {{name}}</p>`
+
+const app1 = new Vue({
+
   data: {
-
-    value: "First"
-
+    name: "Kawsar"
   },
-  methods: {
-    changeInstance() {
-      app12.value = "Changed hoye gese"
-    }
-  }
- 
-});
+  template: temp
+})
 
-
-const app12 = new Vue({
-  el: "#app2",
-  data: {
-
-    value: "Second"
-
-  }
- 
-});
+setTimeout(() => {
+  app1.$mount("#app1")
+}, 2000)
